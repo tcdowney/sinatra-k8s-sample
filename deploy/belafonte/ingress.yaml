@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: belafonte
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  namespace: belafonte
+spec:
+  tls:
+  - secretName: belafonte
+    hosts:
+    - belafonte.k8s.downey.dev
+  rules:
+  - host: belafonte.k8s.downey.dev
+    http:
+      paths:
+      - backend:
+          serviceName: belafonte
+          servicePort: 8080
