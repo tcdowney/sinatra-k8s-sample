@@ -65,7 +65,7 @@ Namespace  Name                             Kind                Owner    Conds. 
 belafonte  belafonte                        Certificate         cluster  1/1 t   ok  -   33m
 ^          belafonte                        Deployment          kapp     2/2 t   ok  -   33m
 ^          belafonte                        Endpoints           cluster  -       ok  -   33m
-^          belafonte                        Ingress            kapp     -       ok  -   33m
+^          belafonte                        Ingress             kapp     -       ok  -   33m
 ^          belafonte                        Service             kapp     -       ok  -   33m
 ^          belafonte-1918113368             CertificateRequest  cluster  1/1 t   ok  -   33m
 ^          belafonte-1918113368-3886681398  Order               cluster  -       ok  -   33m
