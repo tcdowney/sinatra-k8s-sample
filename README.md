@@ -8,7 +8,11 @@ A basic stateless Ruby app for experimenting with Kubernetes
 
 ---
 
-This repo contains the sample code of a basic Sinatra app called [Belafonte](https://en.wikipedia.org/wiki/The_Life_Aquatic_with_Steve_Zissou) that can be deployed to Kubernetes for learning and exploration. The Belafonte app prints out some basic information about the `pod` it is running on and demonstrates inter-pod communication by fetching a UUID from another microservice that spits out UUIDs ([httpbin](https://github.com/postmanlabs/httpbin)).
+This repo contains the sample code of a basic Sinatra app called [Belafonte](https://en.wikipedia.org/wiki/The_Life_Aquatic_with_Steve_Zissou) that can be deployed to Kubernetes for learning and exploration.
+
+It was written to be an example application for my blog post on [Cloud Native Buildpacks and kapp in Kubernetes](https://dev.to/downey/simplify-kubernetes-app-deployments-with-cloud-native-buildpacks-and-kapp-339b).
+
+The app prints out some basic information about the `pod` it is running on and demonstrates inter-pod communication by fetching a UUID from another microservice that spits out UUIDs ([httpbin](https://github.com/postmanlabs/httpbin)).
 
 ## Building the Image
 
